@@ -1,3 +1,3 @@
 def call(Map config = [:]){
-  sh "dotnet install"
+  sh "cd ${config.project_root}; npm install"
 }
