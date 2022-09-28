@@ -1,3 +1,3 @@
 def call(Map config = [:]){
-sh 'npm --version'
+sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}."
 }
