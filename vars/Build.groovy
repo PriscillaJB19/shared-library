@@ -1,3 +1,3 @@
 def call (Map config = [:]){
-  sh "docker build -t ${config.registry}:${config.buildNumber} ."
+  sh "dotnet build -t ${config.registry}:${config.buildNumber} ."
 }
