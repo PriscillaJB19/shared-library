@@ -1,3 +1,3 @@
 def call(Map config = [:]){
-  sh "cd ${config.project_root}; npm install"
+  sh "${config.project_root}; npm install"
 }
