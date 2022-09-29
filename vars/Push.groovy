@@ -1,3 +1,3 @@
 def call (Map config = [:]){
-  sh "cd ${config.project_root};docker build -t ${config.registry}:${config.buildNumber} ."
+   sh "docker push ${config.registry}:${config.buildNumber} ."
 }
