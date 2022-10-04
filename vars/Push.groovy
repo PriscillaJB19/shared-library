@@ -3,7 +3,7 @@ def call (Map config = [:]){
    // sh "git push ${config.registry}:${config.buildNumber}"
     
      docker.withRegistry('priscillajb-dockerhub') {
-            app.push("${config.registry}:${config.buildNumber}")
+            docker push("${config.registry}:${config.buildNumber}")
      }
     
    //sh "docker push ${config.registry}:${config.buildNumber} ."
