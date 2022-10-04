@@ -5,7 +5,7 @@ def call (Map config = [:]){
    
    //sh "
       docker.withRegistry('<priscillajb>', 'priscillajb-dockerhub') {
-            docker push ${config.registry}:${config.buildNumber}
+            docker push ${config.registry}
       }
    
 }
