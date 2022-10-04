@@ -3,9 +3,9 @@ def call (Map config = [:]){
    //sh "docker login registry-1.docker.io"
    //sh "docker push ${config.registry}:${config.buildNumber}"
    
-   sh "
+   //sh "
       docker.withRegistry('<priscillajb>', 'priscillajb-dockerhub') {
             docker push ${config.registry}:${config.buildNumber}
       }
-   "
+   
 }
